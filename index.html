@@ -39,7 +39,6 @@
             overflow-x: hidden;
         }
 
-        /* Subtle texture overlay */
         body::before {
             content: '';
             position: fixed;
@@ -183,7 +182,6 @@
             margin-top: 1.5rem;
         }
 
-        /* Corner accents */
         .corner {
             position: fixed;
             width: 40px;
@@ -225,7 +223,6 @@
             border-width: 0 1px 1px 0;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 480px) {
             .logo {
                 width: 60px;
@@ -273,26 +270,26 @@
     </style>
 </head>
 <body>
-    <!-- Corner accents -->
     <div class="corner corner--tl"></div>
     <div class="corner corner--tr"></div>
     <div class="corner corner--bl"></div>
     <div class="corner corner--br"></div>
 
     <div class="container">
-        <!-- Logo -->
-        <img src="data:image/webp;base64,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" alt="ELAICH" class="logo">
+        <img src="logo.png" alt="ELAICH" class="logo">
 
-        <!-- Brand -->
         <div class="brand">
             <h1 class="brand-name">Elaich OÜ</h1>
             <p class="tagline">We Build.</p>
         </div>
 
-        <!-- Divider -->
         <div class="divider"></div>
 
-        <!-- Contact -->
         <div class="contact">
-            <a href="/cdn-cgi/l/email-protection#640905160b11050a01240108050d070c4a070b09" class="contact-item"><span class="__cf_email__" data-cfemail="2d404c5f42584c43486d48414c444e45034e4240">[email&#160;protected]</span></a>
-            <a href="tel:+60111980049" class="con
+            <a href="mailto:marouane@elaich.com" class="contact-item">marouane@elaich.com</a>
+            <a href="tel:+60111980049" class="contact-item">+60 11 1980 0494</a>
+            <p class="location">Mont Kiara, Kuala Lumpur</p>
+        </div>
+    </div>
+</body>
+</html>
